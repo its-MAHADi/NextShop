@@ -20,7 +20,7 @@ export default function ProductDetails() {
     return <p className="text-center text-gray-500 mt-10">Loading product details...</p>;
 
   return (
-    <div className="max-w-2xl mx-auto my-12 p-6 bg-white rounded-lg shadow-md">
+    <div className="max-w-2xl mx-auto my-12 p-8 px-2 bg-white rounded-lg shadow-md">
       {/* Product Image */}
       {product.image && (
         <img
@@ -32,29 +32,29 @@ export default function ProductDetails() {
 
       {/* Product Information */}
       <div className="space-y-3 text-gray-800 text-lg mb-6">
-        <div className="flex">
-          <span className="w-32 font-semibold">Product Name:</span>
-          <span>{product.name}</span>
+        <div className="">
+          <span className="w-32 font-semibold">Product Name : </span>
+          <span className="font-bold">{product.name}</span>
         </div>
-        <div className="flex">
-          <span className="w-32 font-semibold">Price:</span>
-          <span>${product.price}</span>
+        <div className="">
+          <span className="w-32 font-semibold">Price : </span>
+          <span className="font-semibold text-blue-600">${product.price}</span>
         </div>
-        <div className="flex">
-          <span className="w-32 font-semibold">Description:</span>
-          <span>{product.description}</span>
+        <div className="">
+          <span className="w-32 font-semibold">Description : </span>
+          <span className="text-gray-600"> {product.description}</span>
         </div>
       </div>
 
       {/* Seller Information */}
-      <div className="mb-6 p-4 border rounded-md bg-gray-50">
+      <div className="mb-6 p-4 border rounded-md bg-indigo-100">
         <h2 className="text-xl font-semibold mb-2">Seller Information</h2>
-        <div className="flex">
-          <span className="w-32 font-semibold">Name:</span>
+        <div className="">
+          <span className="w-32 font-semibold">Name : </span>
           <span>{product.userName}</span>
         </div>
-        <div className="flex">
-          <span className="w-32 font-semibold">Email:</span>
+        <div className="">
+          <span className="w-32 font-semibold">Email : </span>
           <span>{product.userEmail}</span>
         </div>
       </div>

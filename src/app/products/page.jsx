@@ -43,8 +43,8 @@ export default function ProductsPage() {
   }, [searchTerm, selectedCategory, products]);
 
   return (
-    <div className="max-w-7xl mx-auto py-10 px-4">
-      <h2 className="text-3xl font-bold mb-6 text-center">All Products</h2>
+    <div className="max-w-7xl mx-auto py-10 mt-10 px-2">
+      <h2 className="text-3xl sm:text-4xl font-bold text-center text-blue-800 mb-6 underline decoration-blue-500">All Products</h2>
 
       {/* Filters */}
       <div className="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4">
@@ -86,7 +86,7 @@ export default function ProductsPage() {
               />
             )}
             <h3 className="text-lg font-semibold mb-1">{product.name}</h3>
-            <p className="text-gray-600 mb-2">${product.price}</p>
+            <p className="text-blue-600 font-semibold mb-2">${product.price}</p>
             <p className="text-gray-500 mb-3">
               {product.description?.slice(0, 60)}...
             </p>

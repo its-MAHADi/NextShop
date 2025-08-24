@@ -69,12 +69,12 @@ export default function DashboardPage() {
   };
 
   return (
-    <div className="max-w-2xl mx-auto mt-3 my-8 bg-white rounded-lg shadow-md px-3">
+    <div className="max-w-2xl mx-auto mt-1 my-8 bg-white rounded-lg shadow-md px-2 mt-10 py-5">
       <h1 className="text-3xl font-bold text-green-600 text-center py-3">
         Add a New Product
       </h1>
 
-      <h1 className="text-3xl font-bold text-center text-blue-600 mb-1">
+      <h1 className="text-2xl font-bold text-center text-blue-600 mb-1">
         Welcome, {session.user.name}!
       </h1>
       <p className="text-gray-600 mb-6 text-center">
