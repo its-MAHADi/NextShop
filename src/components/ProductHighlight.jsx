@@ -7,7 +7,7 @@ export default function ProductHighlight() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/products/recent")
+    fetch("https://next-shop-server-three.vercel.app/products/recent")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.error(err));

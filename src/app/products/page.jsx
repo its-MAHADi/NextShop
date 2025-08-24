@@ -11,7 +11,7 @@ export default function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://next-shop-server-three.vercel.app/products")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
